@@ -21,3 +21,14 @@ target_link_libraries(armor_detector
     ${OpenCV_LIBS}
     onnxruntime
 )
+# ===== 传统视觉可执行文件 =====
+add_executable(armor_detector_trad
+    src/traditional_main.cpp
+    src/traditional_detector.cpp
+    src/onnx_runner.cpp
+)
+target_include_directories(armor_detector_trad PRIVATE include)
+target_link_libraries(armor_detector_trad
+    ${OpenCV_LIBS}
+    onnxruntime
+)
