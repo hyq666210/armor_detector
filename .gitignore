@@ -1,0 +1,7 @@
+build/
+*.o
+*.avi
+*.jpg
+*.png
+probe_infantry.py
+inspect_onnx.py
